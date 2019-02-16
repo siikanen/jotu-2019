@@ -37,6 +37,8 @@ Periaattessa mikä vaan millä saa tekstitiedoston auki. Notepad.exe jossei muut
 
 Itse käytän [vscodea](https://code.visualstudio.com/) ja latex pluginia (ellei ehdota automaattisesti niin asenna se sivupalkista *LaTeX Workshop*)
 
+VSCode:lla avaat vain koko kansion (repon) kerralla. Tukee gittiä suoraan ja voi committaa ja puskea suoraan editorista.
+
 ## Osallistujat
 
 - Kujanen Jussi
