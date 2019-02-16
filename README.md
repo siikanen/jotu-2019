@@ -19,7 +19,7 @@ Käytä github tunnareita tai lisää SSH public avain github omaan profiiliin n
 Näin:
  1. Terminaali auki (bash)
 ```bash
-ssh-keygen -t rsa
+ssh-keygen -t rsa # Paina vaan ENTERiä. Älä lisää salasanoja, ellet halua että sitä pyydetään joka kerralla
 cat ~/.ssh/id_rsa.pub
 ```
 Lisää kaikki mitä komento tulosti [https://github.com/settings/keys](https://github.com/settings/keys)
