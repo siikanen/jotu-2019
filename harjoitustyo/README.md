@@ -30,7 +30,7 @@ Dokumentin rakenne simppelisti:
   - chapters/
     - johdanto.tex
     - vaatimuksetjajarjestelmankuvaus.tex
-    - vaatimustenkeruusuunnitelma
+    - vaatimustenkeruusuunnitelma.tex
 
 ## Yleisiä ohjeita
 
