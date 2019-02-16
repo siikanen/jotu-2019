@@ -8,11 +8,12 @@ Ohjeita LaTeXin käyttöön työssä.
 
 Tärkeintä on ymmärtää se, että kirjoittaessa keskittyy nimenomaan sisällön tuottamiseen, eikä dokumentin ulkoasuun. LaTeX huolehtii dokumentin ulkonäöstä ja syntaksista.
 
-*Google auttaa aina!*
 
 ## Dokumentin rakenne
 
 Jotta työskentely ja dokumentin jäsentäminen olisi selkeämpää, dokumentti on jaettu osiin kappaleittain. Osiin jako helpottaa myös versionhallintaa.
+
+**Lisää sisältö aina kappaleen nimen .tex tiedoston alle. Älä lisää otsikoihin numerointi, latex hoitaa numeroinnitt.**
 
 Dokumentin rakenne simppelisti:
 
@@ -28,6 +29,7 @@ Dokumentin rakenne simppelisti:
 
 [LATEX REFERENSSI](https://www.overleaf.com/learn/latex/Main_Page)
 
+*Google auttaa aina!*
 
 ### Perus kappalejako ja otsikot
 
