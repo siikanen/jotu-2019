@@ -23,6 +23,12 @@ Käytä github tunnareita tai lisää SSH public avain github omaan profiiliin n
 3. Kirjaudu sisään GitHub tunnareillas
 4. Paina repon yläreunasta *Open in Desktop* (tai kopioi linkki ja avaa se Desktopissa)
 
+## Mikä editori on hyvä?
+
+Periaattessa mikä vaan millä saa tekstitiedoston auki. Notepad.exe jossei muuta 😅
+
+Itse käytän [vscodea](https://code.visualstudio.com/) ja latex pluginia (ellei ehdota automaattisesti niin asenna se sivupalkista *LaTeX Workshop*)
+
 ## Osallistujat
 
 - Kujanen Jussi
