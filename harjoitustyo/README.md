@@ -1,6 +1,13 @@
-# Harjoitustyö 1
+# LaTeX Ohjeita
 
 Ohjeita LaTeXin käyttöön työssä.
+
+## Tärkeää ❗
+
+> **Muista lisätä merkintä tekemistäsi muutoksista changelog.tex, aina kun saat jonkin homman loppuun.**
+> **Päivitä myös versionumero sivun yläreunaan!**
+
+Committeja ei ole tässä työssä koskaan liikaa. Committaa aina kun mahdollista niin muut pystyvät seuraamaan mitä tapahtuu.
 
 ## Mikä ihmeen LaTeX?
 
