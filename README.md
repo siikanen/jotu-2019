@@ -16,6 +16,14 @@ git clone https://github.com/siikanen/jotu-2019.git
 
 Käytä github tunnareita tai lisää SSH public avain github omaan profiiliin nii ei tartte kirjautua.
 
+Näin:
+ 1. Terminaali auki (bash)
+```bash
+ssh-keygen -t rsa
+cat ~/.ssh/id_rsa.pub
+```
+Lisää kaikki mitä komento tulosti [https://github.com/settings/keys](https://github.com/settings/keys)
+
 ### Toinen tapa (huijaustapa)
 
 1. Lataa [GitHub Desktop](https://desktop.github.com/)
