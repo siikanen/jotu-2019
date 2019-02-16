@@ -1,4 +1,4 @@
-# Do not inlcude TeX build files in git
+# Do not inlcude LaTeX build files in git
 *.synctex.gz
 *.toc
 *.out
