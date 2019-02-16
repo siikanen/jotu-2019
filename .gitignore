@@ -1,0 +1,6 @@
+# Do not inlcude TeX build files in git
+*.synctex.gz
+*.toc
+*.out
+*.log
+*.aux
