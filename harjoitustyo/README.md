@@ -11,10 +11,18 @@ Committeja ei ole tässä työssä koskaan liikaa. Committaa aina kun mahdollist
 
 ## Mikä ihmeen LaTeX?
 
-[LaTeX](https://fi.wikipedia.org/wiki/LaTeX)
+<details> <summary>LATEX!</summary>
+<a href="https://fi.wikipedia.org/wiki/LaTeX">LaTeX</a>
+
+<a href="https://fi.wikipedia.org/wiki/LaTeX">
+<img src="https://i.pinimg.com/originals/44/24/b0/4424b015b5d60de8081f4a06abe8bcf9.jpg"
+     alt="No vittu latex"
+     style="margin-right: 10px; width: 100px" />
+</a>
+
+</details>
 
 Tärkeintä on ymmärtää se, että kirjoittaessa keskittyy nimenomaan sisällön tuottamiseen, eikä dokumentin ulkoasuun. LaTeX huolehtii dokumentin ulkonäöstä ja syntaksista.
-
 
 ## Dokumentin rakenne
 
@@ -89,8 +97,8 @@ Generoi osoitteessa [https://www.tablesgenerator.com/](https://www.tablesgenerat
 ```
 
 1. The labels consists of sequential numbers.
-  - The individual entries are indicated with a black dot, a so-called bullet.
-  - The text in the entries may be of any length. 
+    - The individual entries are indicated with a black dot, a so-called bullet.
+    - The text in the entries may be of any length. 
 2. The numbers starts at 1 with every call to the enumerate environment.
 
 ```latex
