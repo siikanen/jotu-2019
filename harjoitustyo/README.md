@@ -13,8 +13,13 @@ Committeja ei ole tässä työssä koskaan liikaa. Committaa aina kun mahdollist
 
 [LaTeX](https://fi.wikipedia.org/wiki/LaTeX)
 
-Tärkeintä on ymmärtää se, että kirjoittaessa keskittyy nimenomaan sisällön tuottamiseen, eikä dokumentin ulkoasuun. LaTeX huolehtii dokumentin ulkonäöstä ja syntaksista.
+<a href="https://fi.wikipedia.org/wiki/LaTeX">
+<img src="https://i.pinimg.com/originals/44/24/b0/4424b015b5d60de8081f4a06abe8bcf9.jpg"
+     alt="No vittu latex"
+     style="margin-right: 10px; width: 100px" />
+</a>
 
+Tärkeintä on ymmärtää se, että kirjoittaessa keskittyy nimenomaan sisällön tuottamiseen, eikä dokumentin ulkoasuun. LaTeX huolehtii dokumentin ulkonäöstä ja syntaksista.
 
 ## Dokumentin rakenne
 
