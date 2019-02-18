@@ -89,8 +89,8 @@ Generoi osoitteessa [https://www.tablesgenerator.com/](https://www.tablesgenerat
 ```
 
 1. The labels consists of sequential numbers.
-  - The individual entries are indicated with a black dot, a so-called bullet.
-  - The text in the entries may be of any length. 
+    - The individual entries are indicated with a black dot, a so-called bullet.
+    - The text in the entries may be of any length. 
 2. The numbers starts at 1 with every call to the enumerate environment.
 
 ```latex
