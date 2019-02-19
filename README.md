@@ -2,6 +2,12 @@
 
 Tässä repossa työstetään **TIE-02301 Johdatus ohjelmointiin** -kurssin harjoitustyö 1 raporttia
 
+## Lataa viimeisin build
+
+[Lataa main.pdf](https://jotu:19@jotu-19.siika.coffee/main.pdf)
+
+Rakentuu uudelleen automaattisesti joka commitin jälkeen
+
 ## LATEX OHJEET
 
 [LaTeX ohjessivu](harjoitustyo/README.md)
