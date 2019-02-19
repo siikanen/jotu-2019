@@ -9,6 +9,8 @@ Ohjeita LaTeXin käyttöön työssä.
 
 Committeja ei ole tässä työssä koskaan liikaa. Committaa aina kun mahdollista niin muut pystyvät seuraamaan mitä tapahtuu.
 
+❗❗ Jos jokin kohta jää kesken tai kaipaa muokkausta, **merkitse se `% TODO ` kommentilla!** ❗❗
+
 ## Mikä ihmeen LaTeX?
 
 <details> <summary>LATEX!</summary>
