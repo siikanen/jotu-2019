@@ -4,7 +4,7 @@ Tässä repossa työstetään **TIE-02301 Johdatus ohjelmointiin** -kurssin harj
 
 ## Lataa viimeisin build
 
-[Lataa main.pdf](https://jotu:19@jotu-19.siika.coffee/main.pdf)
+[Lataa main.pdf](https://jotu:19@jotu-2019.siika.coffee/main.pdf)
 
 Rakentuu uudelleen automaattisesti joka commitin jälkeen
 
