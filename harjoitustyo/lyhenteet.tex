@@ -1,0 +1,35 @@
+%
+%%% LYHENTEET JA MÄÄRITELMÄT (+ käännökset?)
+%
+% Tässä tiedostossa määritellään tekstissä kätetyt lyhenteet
+%
+% LaTeX rakentaa näistä automaattisesti sivun, jossa esitellään kaikki
+% dokumentissa esiintyvät lyhenteet (akronyymit). Valmiissa pdf:ssä
+% jokainen lyhenne on myös linkki sen määritelmään, eli linkkiä 
+% klikkaamalla pääsee suoraan sen määritelmään. 
+
+\makeglossaries
+
+    \newacronym{gdpr}{GDPR}{General Data Protection Regulation}
+    \newacronym{crm}{CRM}{Customer Relationship Management}
+
+
+
+    \newglossaryentry{gdprg}
+    {
+        name={General Data Protection Regulation (GDPR)},
+	description={General Data Protection Regulation on Euroopan unionin asettama direktiivi tietosuojakäytännöistä},
+	first={General Data Protection Regulation (GDPR)},
+	text={GDPR}
+    }
+    \glsadd{gdprg}
+
+    \newglossaryentry{crmg}
+    {
+	name={Customer Relationship Management (CRM)},
+	description={Customer Relationship Management eli asiakkuudenhallintajärjestelmä},
+	first={Customer Relationship Management (CRM)},
+	text={API}
+    }
+    \glsadd{crmg}
+

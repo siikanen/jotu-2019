@@ -6,8 +6,10 @@
 
 \documentclass[12pt]{report} % use larger type; default would be 10pt
 
-\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX) 
 \usepackage[finnish]{babel}
+\usepackage[acronym,toc]{glossaries}
+
 
 \include{styles}
 \graphicspath{ {./images/} }
@@ -25,7 +27,11 @@
 %%% Make toc start at 0 instead of 1 by setting this to -1
 \pagenumbering{roman}                   % roman page number for toc and versions
 \setcounter{chapter}{0}
-   
+
+% Lyhenteet mukaan 
+\glossarystyle{altlist}
+\input{lyhenteet}
+
 \begin{document}
 
 
@@ -60,6 +66,7 @@
     \setcounter{page}{1}                    % make it start with "i"
     \include{changelog}
 
+
     {
         \hypersetup{linkcolor=black}
         \tableofcontents  % Print table of contents
@@ -67,6 +74,8 @@
     }
     
 
+
+    %\printglossary[title=Lyhenteet, toctitle=Lyhenteet, type=\acronymtype]
     
     \chapter*{Alkusanat}
     \pagenumbering{arabic}                  % Start text with arabic 1
@@ -82,10 +91,13 @@
         \label{img:myimg.jpg} % vaihda vastaamaan kuvaa, jolloin voit tekstissä viitata \ref{img:myimg}
         \end{figure}
     
+
     % Älä lisää sisältöä tähän tiedostoon vaan niille varattuihin tiedostoihin
 
     \input{chapters/johdanto}
     \input{chapters/vaatimustenkeruusuunnitelma}
     \input{chapters/vaatimuksetjajarjestelmankuvaus}
+
+    \printglossaries
 
 \end{document}

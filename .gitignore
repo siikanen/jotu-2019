@@ -4,3 +4,10 @@
 *.out
 *.log
 *.aux
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.ist
