@@ -11,3 +11,6 @@
 *.glo
 *.gls
 *.ist
+
+# No binaries in git 
+*.pdf
