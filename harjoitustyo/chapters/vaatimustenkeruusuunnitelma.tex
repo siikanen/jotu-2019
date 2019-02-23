@@ -41,31 +41,27 @@ Tässä kappaleessa analysoidaan olevassa olevaa dokumentaatiota. Tämän analyy
     \section*{Suorat metodit}
 
         Suorissa kartutustekniikoissa järjestelmän vaatimuksia kartoitetaan yhdessä sidosryhmien kansssa.
-        Käytämme seuraavia suorakartutustekniikoita:
+        Seuraavia suorakartutustekniikoita hyödynnetään mahdollisimman kattavan analyysin toteuttamiseen:
 
         \subsubsection*{Haastattelut}
 
-            Järjestämme kahdentyyppisiä haastatteluja sidosryhmille. Toisessa haastattelussa haastateltavat vastaavaat ennaltamääriteltyihin kysymyksiin. 
-            Toisessa haastattelussa haastattelu toteutetaan avoimesti. Haastateltaville esitetään erilaisia kysymyksiä järjestelmän toiminnalisuuteen liittyen jolloin
-            haastateltavien kanssa voidaan vuorovaikutteisesti pohtia millainen järjestelmän tulisi olla.
+            Sidosryhmille järjestetään kahdentyyppisiä haastatteluja. Ensimmäisessä haastattelussa haastateltavat vastaavaat ennaltamääriteltyihin kysymyksiin. 
+            Ensimmäisten kysymysten on takroitus on luoda selkeä kuva nykytilanteesta ja sen mahdollisista ongelmakohdista. Toisessa haastattelussa haastattelu toteutetaan avoimesti. Haastateltaville esitetään erilaisia kysymyksiä järjestelmän toiminnalisuuteen liittyen jolloin haastateltavien kanssa voidaan vuorovaikutteisesti pohtia millainen järjestelmän tulisi olla.
 
         \subsubsection*{Havainnointi}
 
-            Lähetämme 2 kehitystiimiläistä vierailemaan  Meganttiin. Nämä tiimiläiset seuraavat päivän ajan Megantin työntekijöiden työtä, ja tekevät 
-            muistiinpanoja työntekijöiden tarpeista järjestelmään liittyen. He havainnoivat myös mitä puutteita ja vahvuuksia nykyisessä asiakastietojärjestelmässä on.
-            Käytämme havainnointia siitä syystä, että ihmisten on usein vaikea pukea arkipäivän työntekoa sanoiksi. Havainnoin avulla pääsemme eroon tästä haittatekijästä.
+            Meganttiin lähetetään 2 kehitystiimiläistä tarkkailemaan. Nämä tiimiläiset seuraavat noin kahden viikon ajan Megantin työntekijöiden työtä, ja tekevät 
+            muistiinpanoja työntekijöiden tarpeista järjestelmään liittyen. He havainnoivat myös mitä puutteita ja vahvuuksia nykyisessä asiakastietojärjestelmässä on ja raportoivat näistä suoraan prototyyååien kehitystiimille. Havainnointi tiedonkeruumenetelmänä on tärkeää, sillä ihmisten on usein vaikea pukea arkipäivän työntekoa sanoiksi. Havainnoinnin avulla pystymme rakentamaan järjestelmän, joka vastaa myös tosielämän tarpeita.
 
 
         \subsubsection*{Ryhmätapaamiset}
 
-            Projektin aikana järjestetään tapaamisia sidosryhmien kanssa. Näissä tapaamisissa kehitystiimi kertovat asiakastietojärjestelmän nykytilasta, kuvailevat tilanteita 
-            johon sidosryhmät voivat vastata kuinka he haluavat järjestelmän toimivan kyseisissä tilanteissa.
+            Projektin aikana järjestetään tapaamisia sidosryhmien kanssa. Näissä tapaamisissa kehitystiimi on suoraan kontaktissa kyseisen ryhmän kanssa ja ryhmän on mahdollista kertoa asiakastietojärjestelmän nykytilasta, kuvailla tilanteita ja havainnollistaa kuinka he haluaisivat järjestelmän toimivan kyseisissä tilanteissa.
 
 
     \section*{Epäsuorat metodit}
 
         Epäsuorissa kartutustekniikoissa sidosryhmiin ei olla suorassa kontaktissa, vaan käytetään jo ennalta olevia tietoja.
-        Käytämme seuraavia epäsuorakartutustekniikoita:
 
         \subsubsection*{Taustatutkimus}
 
@@ -73,14 +69,16 @@ Tässä kappaleessa analysoidaan olevassa olevaa dokumentaatiota. Tämän analyy
         Näitä vaatimuksia ovat esimerkiksi asiakastietojen ylläpito, ja asiakkaiden profilointi.
         Vaatimukset ovat kuitenkin löysästi määriteltyjä ja vaativat tarkennusta.
 
+	Kartoittaa tulee ainakin nykyiset käytössä olevat järjestelmät (tietokannat, ohjelmistot jne), jotta saadaan tietoon mitä vanhoja järjestelmiä voidaan suoraan korvata uudella ja mitkä vanhat järjestelmät ovat tuotannon kannalta välttämättömiä, ja joiden kanssa uuden järjestelmän tulisi olla yhteensopiva.
+
         \subsubsection{Kyselyt}
 
         Osalle järjestelmän sidosryhmistä järjestetään kyselyitä, jossa selvitetään heidän mielestään tärkeimpiä järjestelmän vaatimuksia.
-        Tällaisia sidosryhmiä ovat sisäiset käyttäjät, kuten yrityksen johto, asiakaspalvelu ja järjestelmän ylläpito henkilöstö.
+        Tällaisia sidosryhmiä ovat sisäiset käyttäjät, kuten yrityksen johto-, asiakaspalvelu- ja järjestelmän ylläpitohenkilöstö.
 
         \subsubsection*{Prototyypit}
 
-        Sisäisille käyttäjille valmistetaan kahteen otteeseen prototyyppi järjestelmästä. Käyttäjät voivat siis testata järjestelmää aikaisessa vaiheessa ja antaa palautetta.
+        Sisäisille käyttäjille valmistetaan kahteen otteeseen prototyyppi järjestelmästä. Ensimmäisen vaiheen prototyypin on tarkoitus varmistaa yhteensopivuus vanhojen järjestelmien kanssa ja varmistaa ettei olennaisia komponentteja puutu valmiista järjestelmästä. Toisen vaiheen prototyyppi keskittyy ominaisuuksien hiomiseen ja tässä vaiheessa kehitystä ohjaa vahvasti erinäiset ryhmätapaamiset ja haastattelut käyttäjien kanssa.
 	
 \section{Sidosryhmäanalyysi}
 
