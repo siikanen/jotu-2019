@@ -1,8 +1,15 @@
 ## Kuvan lisääminen
 
+Lisää kuva tähän kansioon
+
 ```latex
  % Tekstin levyinen kuva
+\begin{figure}
+\centering
 \includegraphics[width=\textwidth]{universe.jpg}
+\caption{Kuvateksti (pakollinen)} % Raportissa tulee olla selite jokaisen kuvan/kuvion/taulukon alla
+\label{img:myimg.jpg} % vaihda vastaamaan kuvaa, jolloin voit tekstissä viitata \ref{img:myimg}
+\end{figure}
 
 % Tekstin keskellä (siinä missä kirjoitettukin)
 \begin{figure}[H] % tämä H tarkoittaa tekstin mukana { h | t | b | p | H}
