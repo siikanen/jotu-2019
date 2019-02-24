@@ -1,0 +1,147 @@
+\documentclass{beamer}
+%
+% Choose how your presentation looks.
+%
+% For more themes, color themes and font themes, see:
+% http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html
+%
+\mode<presentation>
+{
+  \usetheme{Berkeley}      % or try Darmstadt, Madrid, Warsaw, ...
+  \usecolortheme{dove} % or try albatross, beaver, crane, ...
+  \usefonttheme{default}  % or try serif, structurebold, ...
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+} 
+
+\usepackage[finnish]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{pgfgantt}
+\usepackage{graphicx}
+
+\title[JOTU-2019 Megantti]{Megantti konsernin asiakastietojärjestelmä}
+\author{Ryhmä 39}
+\institute{Tampereen Teknillinen Yliopisto}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% Uncomment these lines for an automatically generated outline.
+\begin{frame}{Tänään käsittelemme}
+	\tableofcontents[pausesections]
+\end{frame}
+
+\section{Johdanto}
+
+\begin{frame}{Esittely}
+\begin{itemize}
+  \item<1-> Me olemme
+  \item<2-> Megantti on kansallinen kodinkoneita ja elektroniikkaa myyvä konserni
+\end{itemize}
+
+\begin{figure}
+\includegraphics[scale=1.0]{../megantti.png}
+	\caption{Megantti konsernin logo}
+\end{figure}
+
+\end{frame}
+
+\section{Työn edistyminen}
+
+
+\subsection{Sidosryhmäanalyysin tulokset}
+
+\begin{frame}{Sidosyhmät}
+\begin{itemize}
+	\item Sisäiset käyttäjät
+	\item Ulkoiset käyttäjät
+	\item Järjestelmän hallinta
+	\item Tuottajat (Myynti)
+	\item Viranomaiset ja lainsäädäntö
+	\item Kilpailijat
+\end{itemize}
+\end{frame}
+
+\subsection{Määriteltävä järjestelmä}
+
+\begin{frame}{Millainen on hyvä CRM?}
+
+Hyvän CRM piirteitä
+
+	\begin{itemize}
+		\item<2-> Helppokäyttöinen
+		\item<3-> Nopea
+		\item<4-> Yhteensopiva
+		\item<5-> Luotettava
+	\end{itemize}
+\end{frame}
+
+\subsection{Työnjako}
+
+\begin{frame}{Miten toimimme}
+
+	\begin{itemize}
+		\item <2-> Haastattelut
+		\item <3-> Havainnointi
+		\item <4-> Ryhmätapaamiset
+	\end{itemize}
+
+\onslide<5-> Lisäksi
+
+	\begin{itemize}
+		\item<6-> Taustatutkimus
+		\item<7-> Kyselyt
+		\item<8-> Prototyypit
+	\end{itemize}
+
+\end{frame}
+
+
+\section{Aikataulu\-suunnitelma}
+
+
+\begin{frame}
+
+\begin{figure}
+\resizebox{\textwidth}{!}{% use resizebox with textwidth
+\begin{ganttchart}{1}{28}
+    \gantttitle{Neljän viikon aikajakso}{28} \\
+    \gantttitlelist{1,...,28}{1} \\
+    
+\ganttgroup{Epäsuorat metodit}{1}{13} \\
+	\ganttbar{Taustatutkimus}{1}{10} \\
+	\ganttbar{Kyselyt}{3}{10} \\
+	\ganttbar{Prototyyppi 1}{10}{13} \\
+	\ganttmilestone{Prototyyppi 1 valmis}{14} \\
+
+\ganttgroup{Suorat metodit}{15}{28} \\
+	\ganttbar{Haastattelut}{15}{22} \\
+	\ganttbar{Ryhmätapaaminen}{15}{22} \\
+	\ganttbar{Prototyyppi 2}{20}{28} \\
+	\ganttbar{Havainnointi}{3}{18} \\
+
+	% linkit / nuolet
+
+	% epäsuorat
+	\ganttlink{elem1}{elem4} \\
+	\ganttlink{elem2}{elem4} \\
+	\ganttlink{elem3}{elem4} \\
+	
+	% Suorat metodit osa
+	\ganttlink{elem6}{elem8} \\
+	\ganttlink{elem7}{elem8} \\
+
+\end{ganttchart}
+}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+
+\end{frame}
+
+\end{document}
