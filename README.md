@@ -2,6 +2,7 @@
 
 Tässä repossa työstetään **TIE-02301 Johdatus ohjelmointiin** -kurssin harjoitustyö 1 raporttia
 
+
 ## Lataa viimeisin build
 
 [Lataa main.pdf](https://jotu:19@jotu-2019.siika.coffee/main.pdf)
@@ -28,7 +29,7 @@ Näin:
 ssh-keygen -t rsa # Paina vaan ENTERiä. Älä lisää salasanoja, ellet halua että sitä pyydetään joka kerralla
 cat ~/.ssh/id_rsa.pub
 ```
-Lisää kaikki mitä komento tulosti [https://github.com/settings/keys](https://github.com/settings/keys)
+2. Lisää kaikki mitä komento tulosti [https://github.com/settings/keys](https://github.com/settings/keys)
 
 ### Toinen tapa (huijaustapa)
 
