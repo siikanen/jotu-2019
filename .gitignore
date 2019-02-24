@@ -11,6 +11,8 @@
 *.glo
 *.gls
 *.ist
+*.nav
+*.snm
 
 # No binaries in git 
 *.pdf
