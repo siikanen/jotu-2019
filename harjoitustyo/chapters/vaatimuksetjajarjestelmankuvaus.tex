@@ -1,15 +1,58 @@
-\chapter{Vaatimukset ja järjestelmän kuvaus} % Itse luvun otsikko. Huom ei numeroa!
+\chapter{Vaatimukset ja järjestelmän kuvaus} % Itse luvun otsikko. Huom ei numeroa!                                         santeri on ruma
 \label{kuvaus} % Tähän kappaleeseen voi viitata \ref{kuvaus}
 \thispagestyle{fancy} % Tarvitaan, jotta header/footer näkyvät otsikkosivuilla
 
-\lipsum[1]
 
-\section{Otsikko}  % Kappaleen otsikko
+\section{Mallintaminen}  % 3.1
+    Tässä kappaleessa kuvaillaan kaksi käyttäjätarinaa. 
 
-% Täytetekstiä, poista kun lisäät oikeaa sisältöä
-\lipsum
 
-\subsection{Alaotsikko}
+\subsection{K\äytt\ötapauskaavio(t)}
 
-% Täytetekstiä, poista kun lisäät oikeaa sisältöä
-\lipsum[1-3]
+\subsubsection{Käyttäjätapaus 1: Käyttäjätietojen tarkastelu}
+
+    Antti Asiakas haluaa tarkastella itseään koskevia tietoja sekä raportteja. Antin tulee valita etusivulta löytyvä
+    \textit{Omat tiedot} -painike, jotta hän pääsee katsomaan omia tietojaan. 
+
+    Täältä Antti voi:
+
+    \begin{itemize}
+        \item tarkastella ja muuttaa omia yhteystietojaan
+        \item tarkastella itseään koskevia raportteja
+        \item poistaa itsensä järjestelmästä
+        \item kirjautua ulos
+    \end{itemize}
+
+    Jos Antti valitsee itseään koskevat raportit, järjestelmä esittää hänelle hänen oman ostohistoriansa,
+    voimassa olevat alennukset sekä mahdolliset suurostobonukset.
+    Jos Antilla ei ole aiempaa historiaa Megantin kanssa, järjestelmä ei tarjoa hänelle raporttia.
+
+\subsubsection{Käyttäjätapaus 2: Personoidun tarjouksen\/tajouksien luonti ja lähettäminen}
+
+    Järjestelmä ehdottaa Mikko Myyntitykille mahdollista alennusta koskien tiettyä asiakasryhmää.
+    Mahdollinen alennus perustuu järjestelmän omiin sisäisiin statistiikkoihin ja algoritmeihin.
+    Mikko voi hyväksyä, olla hyväksymättä alennusta, tai halutessaan määritellä tarjouksen itse.
+    Jos Mikko syöttää järjestelmään alennuksen, joka on erittäin suuri, järjestelmä antaa hänelle varoituksen.
+    Mikko voi myös tarkastaa, että järjestelmä ei luo alennuksia, jotka ovat liian suuria tai pieniä.
+    Alennusta myönnettäessä määritellään sen suuruus, kesto, tuoteryhmät sekä asiakaskohderyhmä.
+
+    Jos jonkinlainen alennus myönnetään, järjestelmä lähettää asiakasryhmälle sähköisen ilmoituksen alennuksesta (tarjouskirje).
+
+    
+
+
+
+\section{K\äytt\öliittymä}
+
+
+
+\section{Vaatimukset}
+
+
+
+
+\section{Ympäristö}
+
+
+
+   
