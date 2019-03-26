@@ -7,9 +7,9 @@
     Tässä kappaleessa kuvaillaan kaksi käyttäjätarinaa. 
 
 
-\subsection{K\äytt\ötapauskaavio(t)}
+\subsection{K\äytt\ötapauskaavio(t)}    % 3.1.1
 
-\subsubsection{Käyttäjätapaus 1: Käyttäjätietojen tarkastelu}
+\subsubsection{Käyttäjätapaus 1: Käyttäjätietojen tarkastelu}   % 3.1.1.1
 
     Antti Asiakas haluaa tarkastella itseään koskevia tietoja sekä raportteja. Antin tulee valita etusivulta löytyvä
     \textit{Omat tiedot} -painike, jotta hän pääsee katsomaan omia tietojaan. 
@@ -27,7 +27,7 @@
     voimassa olevat alennukset sekä mahdolliset suurostobonukset.
     Jos Antilla ei ole aiempaa historiaa Megantin kanssa, järjestelmä ei tarjoa hänelle raporttia.
 
-\subsubsection{Käyttäjätapaus 2: Personoidun tarjouksen\/tajouksien luonti ja lähettäminen}
+\subsubsection{Käyttäjätapaus 2: Personoidun tarjouksen\/tajouksien luonti ja lähettäminen}     % 3.1.1.2
 
     Järjestelmä ehdottaa Mikko Myyntitykille mahdollista alennusta koskien tiettyä asiakasryhmää.
     Mahdollinen alennus perustuu järjestelmän omiin sisäisiin statistiikkoihin ja algoritmeihin.
@@ -38,20 +38,54 @@
 
     Jos jonkinlainen alennus myönnetään, järjestelmä lähettää asiakasryhmälle sähköisen ilmoituksen alennuksesta (tarjouskirje).
 
-    
+\subsection{Tietoyhteyskaavio(t)}   % 3.1.2
+
+
+\subsection{Navigointikaavio}     % 3.1.3
+
+
+\section{K\äytt\öliittymä}  % 3.2
+    % Rautalankamallit neljästäkäyttöliittymänäkymästä (view) ja esimerkki mahdollisista ikkunoista (dialog). 
+    % Pitää olla vähintään yleisnäkymä/päänäyttö, asiakkaan tietoihin liittyvä näkymä ja raportteihin liittyvä näkymä
 
 
 
-\section{K\äytt\öliittymä}
+\section{Vaatimukset}       % 3.3
+    % Vaatimusten keruun perusteella täydennetty taulukko (alkuperäiset kehyskertomuksen mukaiset ja vaatimuksen keruussa löydetyt uudet) vaatimuksista, joko suoraan dokumenttiin tai liitteenä
+
+    \subsection{Esimerkkivaatimus 1}
+        % Tarkempi kuvaus toiminnallisesta vaatimuksesta, joka ei ole suoraan sidoksissa käyttäjän tekemisiin (esim joku automaattitoiminnoista)
+
+    \subsection{Esimerkkivaatimus 2}
+        % Tarkempi kuvaus ei-toiminnallisesta vaatimuksesta
+
+
+    % Esimerkkivaatimuksen perusteella lukijan tulisi ymmärtää, mitä vaatimuksen perusteella 
+    % järjestelmässä tapahtuu/mitä järjestelmä tekeeeli miten järjestelmän toiminta näkyy käyttäjille. 
+    % Ei tarvitsemennä teknisiin ratkaisuihin (tietokantahaut jne)
 
 
 
-\section{Vaatimukset}
+\section{Ympäristö}     % 3.4
+    \subsection{Liittyvät järjestelmät}     % 3.4.1
+        % Mitä liittyviä järjestelmiä on (esim vanha järjestelmä, viranomaisjärjestelmät, muut yrityksen järjestelmät)? Mitä vaatimuksia ne asettavat määrittelydokumentin järjestelmälle?
 
 
+    \subsection{Tarvittavat yhteydet ja muut ympäristön vaatimukset}  % 3.4.2
+        % Ympäristön (toiminta-tai käyttöympäristö) asettamia vaatimuksia? Mitä vaaditaan järjestelmältä, mitä järjestelmä vaatii ympäristöltä.
 
 
-\section{Ympäristö}
+\section{Jatkokehitysajatukset}     % 3.5
+
+    Vaikka järjestelmä on tarkoitettu nykyisellä rakenteella Megantti konsernin käyttöön, niin sitä on kuitenkin tulevaisuudessa
+    mahdollisuus jatkokehittää ja tuotteistaa, jolloin Megantti voisi tarjota sitä muille yrityksille valmiina CRM:änä.
+
+    Myös, jos Megantti laajentaa toimintaa kansainvälisille markkinoille ja näille tytäryhtiöille otetaan myös käyttöön rakennettava
+    CMR, tulee vähintään järjestelmän kieliä lisätä. Todennäköisesti myös uusia rajapintajärjestelmiä tulisi ottaa huomioon ja implementoida.
+
+
+\section{Avoimet asiat}     % 3.6
+    % Avoimeksi jääneitä asioita esim. määrittelyn aikataulun kiireen tai jonkin muun syyn takia.
 
 
 
