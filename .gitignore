@@ -16,3 +16,6 @@
 
 # No binaries in git 
 *.pdf
+
+# No auto tags to git
+tags
