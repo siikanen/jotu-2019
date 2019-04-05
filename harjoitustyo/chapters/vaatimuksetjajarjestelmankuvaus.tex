@@ -54,16 +54,23 @@
 \section{Vaatimukset}       % 3.3
     % Vaatimusten keruun perusteella täydennetty taulukko (alkuperäiset kehyskertomuksen mukaiset ja vaatimuksen keruussa löydetyt uudet) vaatimuksista, joko suoraan dokumenttiin tai liitteenä
 
-    \subsection{Esimerkkivaatimus 1}
+    \subsection{Esimerkkivaatimus 1: Loki}
         % Tarkempi kuvaus toiminnallisesta vaatimuksesta, joka ei ole suoraan sidoksissa käyttäjän tekemisiin (esim joku automaattitoiminnoista)
-
-    \subsection{Esimerkkivaatimus 2}
+        Järjestelmän tulee pitää kirjaa järjestelmätapahtumista. Tämä sisältää kaikki muutokset mitä eri käyttäjät (niin sisäiset kuin ulkoisetkin) tekevät.
+        Se sisältää tiedot myös kaikista ostoksista, tilinsiirroista ja alennuksista. Osa näistä tiedoista poistetaan välimuistista tietyn ajan 
+        jälkeen. Tällaisia tietoja ovat esimerkiksi käyttähän osoitetietojen muutokset. Järjestelmän ylläpitäjät voivat käyttää tätä dataa hyödyksi tarkastellessaan 
+        järjestelmän tilaa. 
+    \subsection{Esimerkkivaatimus 2: Access Policy}
         % Tarkempi kuvaus ei-toiminnallisesta vaatimuksesta
+        Järjestelmässä tulee olla selkeä \textit{Access policy} käyttäjille. Tämä tullaan käytännössä toteuttamaan
+        minumum access policy -periaatetta. Eli jokaisella käyttäjällä on minimioikeudet järjestelmään.
+        Tämä käytäntö suojaa sekä yksittäistä laitetta, että koko verkkoa, jossa järjestelmä on käytössä. 
+        
 
 
     % Esimerkkivaatimuksen perusteella lukijan tulisi ymmärtää, mitä vaatimuksen perusteella 
-    % järjestelmässä tapahtuu/mitä järjestelmä tekeeeli miten järjestelmän toiminta näkyy käyttäjille. 
-    % Ei tarvitsemennä teknisiin ratkaisuihin (tietokantahaut jne)
+    % järjestelmässä tapahtuu/mitä järjestelmä tekee eli miten järjestelmän toiminta näkyy käyttäjille. 
+    % Ei tarvitse mennä teknisiin ratkaisuihin (tietokantahaut jne)
 
 
 

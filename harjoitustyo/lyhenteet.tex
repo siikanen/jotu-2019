@@ -14,6 +14,8 @@
     \newacronym{crm}{CRM}{Customer Relationship Management}
     \newacronym{erp}{ERP}{Enterprise Resource Planning}
     \newacronym{ups}{UPS}{Uninterupted Powersource}
+    \newacronym{api}{API}{Application Programming Interface}
+    \newacronym{crud}{CRUD}{create, read, update, and delete}
 
 
     \newglossaryentry{gdprg}
@@ -37,7 +39,7 @@
     \newglossaryentry{erpg}
     {
     name={Enterprise Resource Planning (ERP)},
-    description={toiminnanohjausjärjestelmä on yrityksen tietojärjestelmä, joka integroi eri toimintoja, esimerkiksi tuotantoa, jakelua, varastonhallintaa, laskutusta ja kirjanpitoa},
+    description={Toiminnanohjausjärjestelmä on yrityksen tietojärjestelmä, joka integroi eri toimintoja, esimerkiksi tuotantoa, jakelua, varastonhallintaa, laskutusta ja kirjanpitoa},
     first={Enterprise Resource Planning (ERP)},
     text={ERP}
     }
@@ -46,11 +48,29 @@
     \newglossaryentry{upsg}
     {
     name={Uninterupted Power Supply (UPS)},
-    description={järjestelmä, joka takaa tasaisen virransyötön, vaikka järjestelmän ulkopuolinen virransyöttö katkeaisi tai virransyötössä ilmenee joku muu häiriö.},
+    description={Järjestelmä, joka takaa tasaisen virransyötön, vaikka järjestelmän ulkopuolinen virransyöttö katkeaisi tai virransyötössä ilmenee joku muu häiriö.},
     first={Uninterupted Power Supply (UPS)},
     text={UPS}
     }
     \glsadd{upsg}
+
+    \newglossaryentry{apig}
+    {
+    name={Application Programming Interface (API)},
+    description={määritelmä, jonka mukaan eri ohjelmat voivat vaihtaa tietoja eli keskustella keskenään},
+    first={Application Programming Interface (API)},
+    text={API}
+    }
+    \glsadd(apig)
+
+    \newglossaryentry{crudg}
+    {
+    name={Create, Read, Update, and Delete (CRUD)},
+    description={Tietojenkäsittelyn neljä perustoimintoa - luo, lue, päivitä ja poista},
+    first={create, read, update, and delete (CRUD)},
+    text={CRUD}
+    }
+    \glsadd{grudg}
 
     \newglossaryentry{kayttajag}
     {
@@ -76,7 +96,7 @@
     \newglossaryentry{paakayttajag}
     {
     name={Pääkäyttäjä},
-    description={Henkilö, joka käyttää järjestelmää säännöllisesti ja vastaa sen sisällön tuottamisesta}
+    description={Käyttäjätili, jolla on korkein mahdollinen oikeustaso järjestelmään}
     }
     \glsadd{paakayttajag}
 
@@ -90,7 +110,7 @@
     \newglossaryentry{redundantg}
     {
     name={Reduntant},
-    description={varmistettu (kahdennettu) linkki, joka toimii varana, jos ensisijainen järjestelmä kaatuu}
+    description={Varmistettu (kahdennettu) linkki, joka toimii varana, jos ensisijainen järjestelmä kaatuu}
     }
     \glsadd{redundantg}
 
@@ -99,5 +119,15 @@
     name={virtualisointi},
     description={leikitään että resurssit on jotain muuta kun ne oikeesti on}
     }
+    \glsadd{virtualg}
+
+    \newglossaryentry{accesspolicyg}
+    {
+    name={Access Policy - Pääsynhallinta},
+    description={Selvästi luokitellut ja rajatut käyttäjäryhmät, joille on tarkasti määritellyt oikeudet}
+    }
+    \glsadd{accesspolicyg}
+
+        
 
 
