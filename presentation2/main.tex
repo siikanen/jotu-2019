@@ -18,6 +18,7 @@
 \usepackage[utf8x]{inputenc}
 \usepackage{pgfgantt}
 \usepackage{graphicx}
+\usepackage{csquotes}
 
 \title[JOTU-2019 Megantti]{Megantti konsernin asiakastietojärjestelmä}
 \author{Ryhmä 39}
@@ -44,7 +45,7 @@
 \end{itemize}
 
 \begin{figure}
-\includegraphics[scale=1.0]{../megantti.png}
+\includegraphics[scale=0.65]{../megantti.png}
 	\caption{Megantti konsernin logo}
 \end{figure}
 
@@ -77,27 +78,32 @@ Hyvän CRM piirteitä
 	\end{itemize}
 \end{frame}
 
-\subsection{Esimerkkikäyttäjätapaus}
+\subsection{Esimerkki\-käyttäjä\-tapaus}
 
 \begin{frame}{Esimerkkikäyttäjätapaus}
-
-	Järjestelmä ehdottaa Mikko Myyntitykille mahdollista alennusta koskien tiettyä asiakasryhmää.
-	Mahdollinen alennus perustuu järjestelmän omiin sisäisiin statistiikkoihin ja algoritmeihin.
-	Mikko voi hyväksyä, olla hyväksymättä alennusta, tai halutessaan määritellä tarjouksen itse.
-	Jos Mikko syöttää järjestelmään alennuksen, joka on erittäin suuri, järjestelmä antaa hänelle varoituksen.
-	Mikko voi myös tarkastaa, että järjestelmä ei luo alennuksia, jotka ovat liian suuria tai pieniä.
-	Alennusta myönnettäessä määritellään sen suuruus, kesto, tuoteryhmät sekä asiakaskohderyhmä.
-
-	Jos jonkinlainen alennus myönnetään, järjestelmä lähettää asiakasryhmälle sähköisen ilmoituksen alennuksesta (tarjouskirje).
+	\begin{enumerate}
+		\item Järjestelmä ehdottaa tiettyä asiakasryhmää koskevaa alennusta.
+		\item Alennuksesta määritellään sen suuruus ja kesto sekä tuoteryhmät, joita alennus koskee.
+		\item Alennus perustuu järjestelmän sisäisiin statistiikkoihin.
+		\item Mikko Myyntitykki voi valita, hyväksyykö hän ehdotetun tarjouksen vai ei.
+		\item Hän voi myös määritellä alennuksen itse niin halutessaan.
+			\begin{itemize}
+				\item Erittäin suuria alennuksia luotaessa tulostetaan varoitus.
+			\end{itemize}
+		\item Valmiista alennuksesta lähetetään asiakkaalle sähköinen ilmoitus.
+	\end{enumerate}
 	
-\begin{itemize}
-	\item Sisäiset käyttäjät
-	\item Ulkoiset käyttäjät
-	\item Järjestelmän hallinta
-	\item Tuottajat (Myynti)
-	\item Viranomaiset ja lainsäädäntö
-	\item Kilpailijat
-\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\begin{itemize}
+		\item Sisäiset käyttäjät
+		\item Ulkoiset käyttäjät
+		\item Järjestelmän hallinta
+		\item Tuottajat (Myynti)
+		\item Viranomaiset ja lainsäädäntö
+		\item Kilpailijat
+	\end{itemize}
 \end{frame}
 
 
@@ -107,7 +113,7 @@ Hyvän CRM piirteitä
 
 \begin{table}[]
 \resizebox{\textwidth}{!}{% use resizebox with textwidth
-    \begin{tabular}{llll}
+    \begin{tabular}{lllll}
 		\multicolumn{4}{l}{Prioriteeti (1=Vähiten tärkeä, 2= Jonkin verran tärkeä, 3= Erittäin tärkeä)  Luokat (T=Tuottajat, H=Hyödyntäjät, J=Järjestelmävaatimus)}                                                                                                                                                                           \\ \hline
 		\multicolumn{1}{|l|}{1}		&			 \multicolumn{1}{|l|}{{\color[HTML]{000000} \textbf{Prioriteetti}}} & \multicolumn{1}{l|}{{\color[HTML]{000000} \textbf{Lähde}}} & \multicolumn{1}{l|}{{\color[HTML]{000000} \textbf{Luokka}}} & \multicolumn{1}{l|}{{\color[HTML]{000000} \textbf{Vaatimus}}}                                                \\ \hline
     \multicolumn{1}{|l|}{2}		&			 \multicolumn{1}{|l|}{3}& \multicolumn{1}{l|}{Taustatutkimus}			& \multicolumn{1}{l|}{T/H}                                    & \multicolumn{1}{l|}{Järjestelmän tulee noudattaa GDPR:ää.}                                                   \\ \hline
@@ -132,7 +138,7 @@ Hyvän CRM piirteitä
 		\multicolumn{1}{|l|}{21}		&			 \multicolumn{1}{|l|}{2}& \multicolumn{1}{l|}{Taustatutkimus}	& \multicolumn{1}{l|}{J}                                    & \multicolumn{1}{l|}{Järjestelmän tietoja tulee pystyä editoimaan CRUD-menetelmän mukaisesti, jokaisen clientin kautta}									\\ \hline
 		\multicolumn{1}{|l|}{22}		&			 \multicolumn{1}{|l|}{3}& \multicolumn{1}{l|}{Taustatutkimus}	& \multicolumn{1}{l|}{J}                                    & \multicolumn{1}{l|}{Järjestelmässä tulee olla selkeä \textit{Access policy} käyttäjille}						\\ \hline
 		\multicolumn{1}{|l|}{23}		&			 \multicolumn{1}{|l|}{2}& \multicolumn{1}{l|}{Taustatutkimus}	& \multicolumn{1}{l|}{H}                                    & \multicolumn{1}{l|}{Asiakas tulee pystyä etsiä järjestelmästä mahdollisimman monen tietoyhteyden avulla}						\\ \hline
-		}                               \\ \hline
+		                     
 		
    
 
@@ -149,7 +155,7 @@ Hyvän CRM piirteitä
 
 
 	\begin{figure}[h]
-		\includegraphics[width=\textwidth]{../harjoitustyo/images/Tietoyhteyskaavio.pdf}
+		\includegraphics[width=0.8\textwidth]{../harjoitustyo/images/Tietoyhteyskaavio.pdf}
 		\caption{Tietoyhteyskaavio}
 	\end{figure}
 
@@ -170,10 +176,11 @@ Hyvän CRM piirteitä
 \section{Lopuksi}
 
 \begin{frame}{Loppusanat}
-	\begin{csquotes}
-		Hyvin suunniteltu on puoliksi tehty,
-		ja puoliksi tehty on kelvannut ennenkin.
-	\end{csquotes}
+
+	\begin{displayquote}
+		"Hyvin suunniteltu on puoliksi tehty, ja puoliksi tehty on kelvannut ennenkin."
+	\end{displayquote}
+
 \end{frame}
 
 
