@@ -6,8 +6,9 @@
 \section{Mallintaminen}  % 3.1
     Tässä kappaleessa kuvaillaan kaksi käyttäjätarinaa. 
 
-
 \subsection{Kayttotapauskaavio(t)}    % 3.1.1
+
+    Järjestelmän käyttötapauskaaviot esitellään liitteessä %TODO
 
 \subsubsection{Käyttäjätapaus 1: Käyttäjätietojen tarkastelu}   % 3.1.1.1
 
@@ -38,21 +39,21 @@
 
     Jos jonkinlainen alennus myönnetään, järjestelmä lähettää asiakasryhmälle sähköisen ilmoituksen alennuksesta (tarjouskirje).
 
-\subsection{Tietoyhteyskaavio(t)}   % 3.1.2
+\subsection{Tietoyhteyskaavio}   % 3.1.2
 
+    Järjestelmän rakennetta koskeva tietoyhteyskaavio esitellään liitteessä %TODO
 
 \subsection{Navigointikaavio}     % 3.1.3
     
-    Esimerkit asiakkaan ja sisäisen toimijan navigointikaavioista löytyy liitteestä x   % TODO lisää liiteet
-
+    Esimerkit asiakkaan ja sisäisen toimijan navigointikaavioista löytyvät liitteestä %TODO  
+    
 \section{Käyttöliittymä}  % 3.2
-    % Rautalankamallit neljästäkäyttöliittymänäkymästä (view) ja esimerkki mahdollisista ikkunoista (dialog). 
-    % Pitää olla vähintään yleisnäkymä/päänäyttö, asiakkaan tietoihin liittyvä näkymä ja raportteihin liittyvä näkymä
-
-
+    
+    Järjestelmän käyttöliittymää kuvaavat esimerkit on esitelty liitteessä %TODO
 
 \section{Vaatimukset}       % 3.3
-    % Vaatimusten keruun perusteella täydennetty taulukko (alkuperäiset kehyskertomuksen mukaiset ja vaatimuksen keruussa löydetyt uudet) vaatimuksista, joko suoraan dokumenttiin tai liitteenä
+
+    Järjestelmää koskevat vaatimukset esitellään taulukoituna liitteessä %TODO
 
     \subsection{Esimerkkivaatimus 1: Loki}
         % Tarkempi kuvaus toiminnallisesta vaatimuksesta, joka ei ole suoraan sidoksissa käyttäjän tekemisiin (esim joku automaattitoiminnoista)
@@ -65,31 +66,24 @@
         Järjestelmässä tulee olla selkeä \textit{Access policy} käyttäjille. Tämä tullaan käytännössä toteuttamaan
         minumum access policy -periaatetta. Eli jokaisella käyttäjällä on minimioikeudet järjestelmään.
         Tämä käytäntö suojaa sekä yksittäistä laitetta, että koko verkkoa, jossa järjestelmä on käytössä. 
-        
-
-
-    % Esimerkkivaatimuksen perusteella lukijan tulisi ymmärtää, mitä vaatimuksen perusteella 
-    % järjestelmässä tapahtuu/mitä järjestelmä tekee eli miten järjestelmän toiminta näkyy käyttäjille. 
-    % Ei tarvitse mennä teknisiin ratkaisuihin (tietokantahaut jne)
-
-
 
 \section{Ympäristö}     % 3.4
     \subsection{Liittyvät järjestelmät}     % 3.4.1
         % Mitä liittyviä järjestelmiä on (esim vanha järjestelmä, viranomaisjärjestelmät, muut yrityksen järjestelmät)? Mitä vaatimuksia ne asettavat määrittelydokumentin järjestelmälle?
-        Uusi \gls{crm} tulee käytännössä integroitumaan jo olemassa olevan \gls{erp} järjestelmän alijärjestelmäksi. Näinollen sen tulee pystyä kommunikoimaan muunmuassa olemassaolevan tietokannan kanssa. Kommunikointiin kuuluu muunmuassa tilausten, asiakastietojen, tuotteiden ja myyntihistorian hakeminen, luominen, ja muuttaminen järjestelmässä. Uudella \gls{crm}:llä ei tule olemaan omaa tietokantaa, vaan se hyödyntää jo olemassaolevaa tietokantaa suoraan. 
-
+        Uusi \gls{crm} tulee käytännössä integroitumaan jo olemassa olevan \gls{erp} järjestelmän alijärjestelmäksi. Näinollen sen tulee pystyä kommunikoimaan
+         muunmuassa olemassaolevan tietokannan kanssa. Kommunikointiin kuuluu muunmuassa tilausten, asiakastietojen, tuotteiden ja myyntihistorian hakeminen, 
+         luominen, ja muuttaminen järjestelmässä. Uudella \gls{crm}:llä ei tule olemaan omaa tietokantaa, vaan se hyödyntää jo olemassaolevaa tietokantaa suoraan. 
 
     \subsection{Tarvittavat yhteydet ja muut ympäristön vaatimukset}  % 3.4.2
         % Ympäristön (toiminta-tai käyttöympäristö) asettamia vaatimuksia? Mitä vaaditaan järjestelmältä, mitä järjestelmä vaatii ympäristöltä.
-        Koska \gls{crm} tulee käyttämään jo olemassaolevan \gls{erp}:n tietokantaa, tulee se sijoittaa fyysisesti mahdollisimman lähelle tietokantapalvelun tarjoavaa järjestelmää. Näin saadaan minimoitua mahdollinen latenssi järjestelmien välillä ja nopeutettua operaatioiden suoritusta. Suositusnopeus \gls{crm}:n ja \gls{erp}:n välillä käytettävälle linkille on 40Gbit/s ja sen tulisi olla kahdennettu (\gls{redundantg}). 
-
-        Järjestelmän saatavuus tulisi myös taata replikoimalla palvelimia vähintään kolmeen instanssiin. Tämä voidaan käytännössä toteuttaa esimerkiksi virtualisoinnin (\gls{virtualg}) avulla. Näin saatavuus säilyy vaikka yhdessä instanssissa ilmenisikin ongelma. Järjestelmän virransyöttö tulee hoitaa kokonaan \gls{ups} kautta. 
-
-        Koska järjestelmään pääsee käsiksi myös internetin kautta, tulee sille tarjota mahdollisimman nopea linkki internetiin. Tämän linkin suositusnopeus on minimissään 1Gbit/s molempiin suuntiin (palvelimelta internetiin ja toisinpäin). 
-
+        Koska \gls{crm} tulee käyttämään jo olemassaolevan \gls{erp}:n tietokantaa, tulee se sijoittaa fyysisesti mahdollisimman lähelle tietokantapalvelun
+        tarjoavaa järjestelmää. Näin saadaan minimoitua mahdollinen latenssi järjestelmien välillä ja nopeutettua operaatioiden suoritusta. Suositusnopeus 
+        \gls{crm}:n ja \gls{erp}:n välillä käytettävälle linkille on 40Gbit/s ja sen tulisi olla kahdennettu (\gls{redundantg}). 
+        Järjestelmän saatavuus tulisi myös taata replikoimalla palvelimia vähintään kolmeen instanssiin. Tämä voidaan käytännössä toteuttaa esimerkiksi virtualisoinnin 
+        (\gls{virtualg}) avulla. Näin saatavuus säilyy vaikka yhdessä instanssissa ilmenisikin ongelma. Järjestelmän virransyöttö tulee hoitaa kokonaan \gls{ups} kautta. 
+        Koska järjestelmään pääsee käsiksi myös internetin kautta, tulee sille tarjota mahdollisimman nopea linkki internetiin. Tämän linkin suositusnopeus on minimissään 
+        1Gbit/s molempiin suuntiin (palvelimelta internetiin ja toisinpäin). 
         Palvelintila tulisi olla sellainen, johon vain kyseiseen tilaan kulkuluvan omaavilla on pääsy. Tällainen kulkulupa tulisi olla minimimäärällä henkilöstöä, mitä mahdollista. 
-
 
 \section{Jatkokehitysajatukset}     % 3.5
 
@@ -98,7 +92,6 @@
 
     Myös, jos Megantti laajentaa toimintaa kansainvälisille markkinoille ja näille tytäryhtiöille otetaan myös käyttöön rakennettava
     CMR, tulee vähintään järjestelmän kieliä lisätä. Todennäköisesti myös uusia rajapintajärjestelmiä tulisi ottaa huomioon ja implementoida.
-
 
 \section{Avoimet asiat}     % 3.6
     % Avoimeksi jääneitä asioita esim. määrittelyn aikataulun kiireen tai jonkin muun syyn takia.
