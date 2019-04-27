@@ -13,6 +13,10 @@
 *.ist
 *.nav
 *.snm
+*.lot
+*.lof
+*.bcf
+*.run.xml
 
 # No binaries in git 
 *.pdf
