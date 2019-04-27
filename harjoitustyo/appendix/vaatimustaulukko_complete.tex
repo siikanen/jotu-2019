@@ -1,0 +1,40 @@
+\chapter{Taulukko lopullisista vaatimuksista}
+
+\begin{landscape}
+\begin{table}[]
+\resizebox{21cm}{!}{% use resizebox with textwidth
+\begin{tabular}{lllll}
+    \multicolumn{4}{l}{Prioriteeti (1=Vähiten tärkeä, 2= Jonkin verran tärkeä, 3= Erittäin tärkeä)  Luokat (T=Tuottajat, H=Hyödyntäjät, J=Järjestelmävaatimus)}                                                                                                                                                                           \\ \hline
+    \multicolumn{1}{|l|}{1}		&			 \multicolumn{1}{|l|}{{\color[HTML]{000000} \textbf{Prioriteetti}}} & \multicolumn{1}{l|}{{\color[HTML]{000000} \textbf{Lähde}}} & \multicolumn{1}{l|}{{\color[HTML]{000000} \textbf{Luokka}}} & \multicolumn{1}{l|}{{\color[HTML]{000000} \textbf{Vaatimus}}}                                                \\ \hline
+\multicolumn{1}{|l|}{2}		&			 \multicolumn{1}{|l|}{3}& \multicolumn{1}{l|}{Taustatutkimus}			& \multicolumn{1}{l|}{T/H}                                    & \multicolumn{1}{l|}{Järjestelmän tulee noudattaa GDPR:ää.}                                                   \\ \hline
+\multicolumn{1}{|l|}{3}		&			 \multicolumn{1}{|l|}{3}& \multicolumn{1}{l|}{Haastattelut}				& \multicolumn{1}{l|}{J}                                    & \multicolumn{1}{l|}{Asiakastietojärjestelmää tulee pystyä käyttää eri päätelaitteilta.}                       \\ \hline
+\multicolumn{1}{|l|}{4}		&			 \multicolumn{1}{|l|}{3}& \multicolumn{1}{l|}{Taustatutkimus}			& \multicolumn{1}{l|}{J}                                      & \multicolumn{1}{l|}{Järjestelmän tulee olla yhteensopiva muiden olemassa olevien järjestelmien kanssa.}      \\ \hline
+\multicolumn{1}{|l|}{5}		&			 \multicolumn{1}{|l|}{2}& \multicolumn{1}{l|}{Havainnointi}				& \multicolumn{1}{l|}{T}                                      & \multicolumn{1}{l|}{Asiakkaiden tiedot tulee pystyä etsiä järjestelmästä nopeasti.}                           \\ \hline
+\multicolumn{1}{|l|}{6}		&			 \multicolumn{1}{|l|}{3}& \multicolumn{1}{l|}{Haastattelut}				& \multicolumn{1}{l|}{J}                                      & \multicolumn{1}{l|}{Järjestelmä rakennetaan olemassa olevan olevan ERP SQL constructoreiden päälle.}          \\ \hline
+\multicolumn{1}{|l|}{7}		&			 \multicolumn{1}{|l|}{2}& \multicolumn{1}{l|}{Prototyypit}				& \multicolumn{1}{l|}{T}                                      & \multicolumn{1}{l|}{Järjestelmän tulee seurata asiakkaiden ostoskäyttäytymistä.}                              \\ \hline
+\multicolumn{1}{|l|}{8}		&			 \multicolumn{1}{|l|}{3}& \multicolumn{1}{l|}{Havainnointi}				& \multicolumn{1}{l|}{T}                                      & \multicolumn{1}{l|}{Järjestelmän tulee pitää lokia kaikista tapahtumista.}                                   \\ \hline
+\multicolumn{1}{|l|}{9}		&			 \multicolumn{1}{|l|}{2}& \multicolumn{1}{l|}{Taustatutkimus}			& \multicolumn{1}{l|}{T}                                      & \multicolumn{1}{l|}{Järjestelmän pitää pystyä analysoida ja profiloida asiakkaita.}                         \\ \hline
+\multicolumn{1}{|l|}{10}		&			 \multicolumn{1}{|l|}{1}& \multicolumn{1}{l|}{Prototyypit/Haastattelut}& \multicolumn{1}{l|}{T/H}                                    & \multicolumn{1}{l|}{Järjestelmän tulee olla helppokäyttöinen(Graphical user Interface.)}                    \\ \hline
+\multicolumn{1}{|l|}{11}		&			 \multicolumn{1}{|l|}{1}& \multicolumn{1}{l|}{Prototyypit}			& \multicolumn{1}{l|}{J}                                    & \multicolumn{1}{l|}{Järjestelmässä tulee olla monipuolisia toimintoja, kuten ostoshistoria, selainhistoria.}\\ \hline
+\multicolumn{1}{|l|}{12}		&			 \multicolumn{1}{|l|}{2}& \multicolumn{1}{l|}{Haastattelut}			& \multicolumn{1}{l|}{J}                                    & \multicolumn{1}{l|}{Järjestelmän luotettavuus tulee taata.}                                                 \\ \hline
+\multicolumn{1}{|l|}{13}		&			 \multicolumn{1}{|l|}{1}& \multicolumn{1}{l|}{Ryhmätapaamiset}	& \multicolumn{1}{l|}{H}                                    & \multicolumn{1}{l|}{Järjestelmän tulee pystyä yksilöllistää asiakkaan markkinointia.}                       \\ \hline
+    \multicolumn{1}{|l|}{14}		&			 \multicolumn{1}{|l|}{2}& \multicolumn{1}{l|}{Ryhmätapaamiset}	& \multicolumn{1}{l|}{T}                                    & \multicolumn{1}{l|}{Järjestelmän tulee pitää kirjaa järjestelmätapahtumista.}                               \\ \hline
+    \multicolumn{1}{|l|}{15}		&			 \multicolumn{1}{|l|}{2}& \multicolumn{1}{l|}{Taustatutkimus}	& \multicolumn{1}{l|}{J}                                    & \multicolumn{1}{l|}{Järjestelmän backendin tulee olla erotettu frontendistä (headless)}                               \\ \hline
+    \multicolumn{1}{|l|}{16}		&			 \multicolumn{1}{|l|}{3}& \multicolumn{1}{l|}{Haastattelut}	& \multicolumn{1}{l|}{J}                                    & \multicolumn{1}{l|}{Järjestelmällä tulee olla web pohjainen skaalautuva käyttöliittymä}                               \\ \hline
+    \multicolumn{1}{|l|}{17}		&			 \multicolumn{1}{|l|}{3}& \multicolumn{1}{l|}{Ryhmätapaamiset}	& \multicolumn{1}{l|}{H}                                    & \multicolumn{1}{l|}{Asiakkaan tulee osata käyttää järjestelmää ilman alustavaa koulutusta}                               \\ \hline
+    \multicolumn{1}{|l|}{18}		&			 \multicolumn{1}{|l|}{3}& \multicolumn{1}{l|}{Prototyypit}	& \multicolumn{1}{l|}{J}                                    & \multicolumn{1}{l|}{Headless frontin API:n tulee käyttää HSTS menetelmää}																	\\ \hline
+    \multicolumn{1}{|l|}{19}		&			 \multicolumn{1}{|l|}{3}& \multicolumn{1}{l|}{Taustatutkimus}	& \multicolumn{1}{l|}{H}                                    & \multicolumn{1}{l|}{Asiakastietojärjestelmän on automatisoitava varmuuskopiointi}								\\ \hline
+    \multicolumn{1}{|l|}{20}		&			 \multicolumn{1}{|l|}{2}& \multicolumn{1}{l|}{Ryhmätapaamiset}	& \multicolumn{1}{l|}{J}                                    & \multicolumn{1}{l|}{Asiakastietojärjestelmästä on oltava dokumnentaatio}														\\ \hline
+    \multicolumn{1}{|l|}{21}		&			 \multicolumn{1}{|l|}{2}& \multicolumn{1}{l|}{Taustatutkimus}	& \multicolumn{1}{l|}{J}                                    & \multicolumn{1}{l|}{Järjestelmän tietoja tulee pystyä editoimaan CRUD-menetelmän mukaisesti, jokaisen clientin kautta}									\\ \hline
+    \multicolumn{1}{|l|}{22}		&			 \multicolumn{1}{|l|}{3}& \multicolumn{1}{l|}{Taustatutkimus}	& \multicolumn{1}{l|}{J}                                    & \multicolumn{1}{l|}{Järjestelmässä tulee olla selkeä \textit{Access policy} käyttäjille}						\\ \hline
+    \multicolumn{1}{|l|}{23}		&			 \multicolumn{1}{|l|}{2}& \multicolumn{1}{l|}{Taustatutkimus}	& \multicolumn{1}{l|}{H}                                    & \multicolumn{1}{l|}{Asiakas tulee pystyä etsiä järjestelmästä mahdollisimman monen tietoyhteyden avulla}						\\ \hline
+                         
+    
+
+
+\end{tabular}
+}
+    \caption{Taulukko lopullisista vaatimuksista}
+    \label{tab:vaatimukset2}
+    \end{table}	
+\end{landscape}
