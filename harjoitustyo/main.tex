@@ -74,6 +74,8 @@
     {
         \hypersetup{linkcolor=black}
         \tableofcontents  % Print table of contents
+        \listoftables
+        \listoffigures
     
     }
     
@@ -82,33 +84,36 @@
     %\printglossary[title=Lyhenteet, toctitle=Lyhenteet, type=\acronymtype]
     
     %\chapter*{Alkusanat}
-    \pagenumbering{arabic}                  % Start text with arabic 1
     
     %Tähän kohtaan abstrakteja alkusanoja ja tässä kohtaa pitäis näkyä tekstiä jos webhooker toimii
-
     
-
+    
+    
     %\begin{figure}[H] % tämä H tarkoittaa tekstin mukana { h | t | b | p | H}
-     %   \centering
-      %  \includegraphics[width=8cm]{latex.png}
-       % \caption{\LaTeX -logo} % Raportissa tulee olla selite jokaisen kuvan/kuvion/taulukon alla
+        %   \centering
+        %  \includegraphics[width=8cm]{latex.png}
+        % \caption{\LaTeX -logo} % Raportissa tulee olla selite jokaisen kuvan/kuvion/taulukon alla
         %\label{img:myimg.jpg} % vaihda vastaamaan kuvaa, jolloin voit tekstissä viitata \ref{img:myimg}
-        %\end{figure}
+    %\end{figure}
     
-
+    
     % Älä lisää sisältöä tähän tiedostoon vaan niille varattuihin tiedostoihin
-
+    
     \input{chapters/johdanto}
     \input{chapters/vaatimustenkeruusuunnitelma}
     \input{chapters/vaatimuksetjajarjestelmankuvaus}
 
+    % LÄHTEET
+    \input{lahteet}
+    
     \printglossaries
 
     % LIITTEET
     \appendix
-
+        
     \input{appendix/ganttchart}
     \input{appendix/vaatimustaulukko}
     \input{appendix/sidosryhmataulukko}
+    
 
 \end{document}
