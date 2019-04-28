@@ -74,28 +74,35 @@
     {
         \hypersetup{linkcolor=black}
         \tableofcontents  % Print table of contents
-        \listoftables
         \listoffigures
+        \listoftables
     
     }
     
 
 
     %\printglossary[title=Lyhenteet, toctitle=Lyhenteet, type=\acronymtype]
-    
-    %\chapter*{Alkusanat}
-    
-    %Tähän kohtaan abstrakteja alkusanoja ja tässä kohtaa pitäis näkyä tekstiä jos webhooker toimii
+       
     
     
+    \begin{abstract}
+        Tämä dokumentti on tarkoitettu havainnollistamaan Megantti-konsernille tuotettavan asiakastietojärjestelmän suunnittelua, kehitystä ja toteutusta. Dokumentissa pyritään olemaan mahdollisimman kattavia, jotta valmiin asiakastietojärjestelmän
+        rakentaminen olisi mahdollismman vaivatonta suoraan tämän dokumentin pohjalta.
+        
+        Dokumentin eri luvuissa analysoimme muun muassa taustatilannetta, sidosryhmiä ja järjestelmän vaatimuksia.
+        Luvussa \ref{keruu} analysoidaan syvemmin järjestelmän vaatimuksien keruuta. Luku \ref{kuvaus} puolestaan keskittyy enemmän järjestelmän vaatimuksiin, lopulliseen ulkoasuun ja toimintaperiaatteisiin.
+
+        Kuvassa \ref{img:megantti} on Megantti-konsernin logo.
     
-    %\begin{figure}[H] % tämä H tarkoittaa tekstin mukana { h | t | b | p | H}
-        %   \centering
-        %  \includegraphics[width=8cm]{latex.png}
-        % \caption{\LaTeX -logo} % Raportissa tulee olla selite jokaisen kuvan/kuvion/taulukon alla
-        %\label{img:myimg.jpg} % vaihda vastaamaan kuvaa, jolloin voit tekstissä viitata \ref{img:myimg}
-    %\end{figure}
-    
+        
+        
+        \begin{figure}[H] % tämä H tarkoittaa tekstin mukana { h | t | b | p | H}
+            \centering
+            \includegraphics[width=5cm]{megantti.png}
+            \caption{Megantti-konsernin logo} % Raportissa tulee olla selite jokaisen kuvan/kuvion/taulukon alla
+            \label{img:megantti} % vaihda vastaamaan kuvaa, jolloin voit tekstissä viitata \ref{img:myimg}
+        \end{figure}
+    \end{abstract}
     
     % Älä lisää sisältöä tähän tiedostoon vaan niille varattuihin tiedostoihin
     

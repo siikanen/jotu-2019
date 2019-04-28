@@ -2,6 +2,7 @@
 \label{kuvaus} % Tähän kappaleeseen voi viitata \ref{kuvaus}
 \thispagestyle{fancy} % Tarvitaan, jotta header/footer näkyvät otsikkosivuilla
 
+Tässä luvussa käsitellään järjestelmän lopullisisa vaatimuksia, sekä määritellään järjestelmän erilaisia tomintaperiaatteita. Lopulliset vaatimukset on koottu taulukkoon liitteessä \ref{tab:vaatimukset2}  
 
 \section{Mallintaminen}  % 3.1
     Tässä kappaleessa kuvaillaan käyttäjätarinoita ja havainnollistetaan niihin liittyviä toimintoja. 
@@ -33,7 +34,7 @@
         \label{img:kayttotapaus1}
     \end{figure}
 
-    Sisäisiin käyttäjiin lukeutuvat kaikki yrityksen sisäiset toimijat. Sisäisten käyttäjien käyttötapauskaavio on liitteessä \ref{kayttotapaus2}. 
+    Sisäisiin käyttäjiin lukeutuvat kaikki yrityksen sisäiset toimijat. Sisäisten käyttäjien käyttötapauskaavio on liitteessä \ref{kayttotapaus2}, jossa on esitelty kaikki dokumenttiin liittyvät käyttötapauskaaviot. 
 
 \subsubsection{Käyttäjätapaus 2: Personoidun tarjouksen/tarjouksien luonti ja lähet\-täminen}     % 3.1.1.2
 
@@ -44,14 +45,15 @@
     Mikko voi myös tarkastaa, että järjestelmä ei luo alennuksia, jotka ovat liian suuria tai pieniä.
     Alennusta myönnettäessä määritellään sen suuruus, kesto, tuoteryhmät sekä asiakaskohderyhmä.
 
-    Jos jonkinlainen alennus myönnetään, järjestelmä lähettää asiakasryhmälle sähköisen ilmoituksen alennuksesta (tarjouskirje).
+    Jos jonkinlainen alennus myönnetään, järjestelmä lähettää asiakasryhmälle säh\-köisen ilmoituksen alennuksesta (tarjouskirje).
 
 \subsection{Tietoyhteyskaavio}   % 3.1.2
 
     Järjestelmän rakennetta koskeva tietoyhteyskaavio esitellään kuvassa \ref{img:tietoyhteyskaavio}, sivulla \pageref{img:tietoyhteyskaavio}.
 
     \begin{figure}[h]
-        \includegraphics[width=\textwidth]{Tietoyhteyskaavio.pdf}
+        \centering
+        \includegraphics[width=0.9\textwidth]{Tietoyhteyskaavio.pdf}
         \caption{Tietoyhteyskaavio Megantin CRM:lle}
         \label{img:tietoyhteyskaavio}
     \end{figure}
@@ -142,11 +144,11 @@
 
 \section{Jatkokehitysajatukset}     % 3.5
 
-    Vaikka järjestelmä on tarkoitettu nykyisellä rakenteella Megantti konsernin käyttöön, niin sitä on kuitenkin tulevaisuudessa
-    mahdollisuus jatkokehittää ja tuotteistaa, jolloin Megantti voisi tarjota sitä muille yrityksille valmiina CRM:änä.
+    Vaikka järjestelmä on tarkoitettu nykyisellä rakenteella Megantti konser\-nin käyt\-töön, niin sitä on kuitenkin tulevai\-suudes\-sa
+    mahdollisuus jatkokehittää ja tuotteistaa, jolloin Megantti voisi tarjota sitä muille yrityksille valmiina \gls{crm}:änä.
 
-    Myös, jos Megantti laajentaa toimintaa kansainvälisille markkinoille ja näille tytäryhtiöille otetaan myös käyttöön rakennettava
-    CMR, tulee vähintään järjestelmän kieliä lisätä. Todennäköisesti myös uusia rajapintajärjestelmiä tulisi ottaa huomioon ja implementoida.
+    Myös, jos Megantti laajentaa toimintaa kansainvälisille markkinoille ja näille tytär\-yhtiöil\-le otetaan myös käyttöön raken\-net\-tava
+    \gls{crm}, tulee vähintään järjestelmän kieliä lisätä. Todennäköisesti myös uusia rajapintajärjestelmiä tulisi ottaa huomioon ja implementoida.
 
 \section{Avoimet asiat}     % 3.6
 
