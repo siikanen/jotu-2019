@@ -65,7 +65,8 @@ Tässä luvussa käsitellään järjestelmän lopullisisa vaatimuksia, sekä mä
     Esimerkit asiakkaan navigointikaaviosta on kuvassa \ref{img:nkasiakas}, sivulla \pageref{img:nkasiakas}. Asiakas voi muunmuassa muokata omia tietojaan, tarkastella tilauksiaan ja tilata raportin omista tiedoistaan.
 
     \begin{figure}[h]
-        \includegraphics[width=\textwidth]{nkasiakas.pdf}
+        \centering
+        \includegraphics[width=0.9\textwidth]{nkasiakas.pdf}
         \caption{Asiakkaan navigointikaavio}
         \label{img:nkasiakas}
     \end{figure}
@@ -74,7 +75,8 @@ Tässä luvussa käsitellään järjestelmän lopullisisa vaatimuksia, sekä mä
     Hän voi myös tarkastella erilaisia raportteja, jotka voivat olla automaattisesti luotuja tai analyytikoiden tuottamia.
     
     \begin{figure}[h]
-        \includegraphics[width=\textwidth]{nkmyyja.pdf}
+        \centering
+        \includegraphics[width=0.9\textwidth]{nkmyyja.pdf}
         \caption{Myyjän navigointikaavio}
         \label{img:nkmyyja}
     \end{figure}
@@ -88,7 +90,8 @@ Tässä luvussa käsitellään järjestelmän lopullisisa vaatimuksia, sekä mä
     Esimerkkinä käyttöliittymästä käyttäjän päänäkymä kuvassa \ref{img:asiakasesimerkki}, sivulla \pageref{img:asiakasesimerkki}.
 
     \begin{figure}[h!]
-        \includegraphics[width=\textwidth]{gui/asiakas.png}
+        \centering
+        \includegraphics[width=0.9\textwidth]{gui/asiakas.png}
         \caption{Asiakkaan päänäkymä}
         \label{img:asiakasesimerkki}
     \end{figure}
@@ -132,8 +135,7 @@ Tässä luvussa käsitellään järjestelmän lopullisisa vaatimuksia, sekä mä
         tarjoavaa järjestelmää. Näin saadaan minimoitua mahdollinen latenssi järjestelmien välillä ja nopeutettua operaatioiden suoritusta. Suositusnopeus 
         \gls{crm}:n ja \gls{erp}:n välillä käytettävälle linkille on 40Gbit/s ja sen tulisi olla kahdennettu (\gls{redundantg}). \cite{crm}
 
-        Järjestelmän saatavuus tulisi myös taata replikoimalla palvelimia vähintään kolmeen instanssiin. Tämä voidaan käytännössä toteuttaa esimerkiksi virtualisoinnin 
-        (\gls{virtualg}) avulla. Näin saatavuus säilyy vaikka yhdessä instanssissa ilmenisikin ongelma. 
+        Järjestelmän saatavuus tulisi myös taata replikoimalla palvelimia vähintään kolmeen instanssiin. Tämä voidaan käytännössä toteuttaa esimerkiksi virtualisoinnin avulla. Näin saatavuus säilyy vaikka yhdessä instanssissa ilmenisikin ongelma. 
         
         Järjestelmän virransyöttö tulee hoitaa kokonaan \gls{ups} kautta. Näin turvaudutaan mahdollisilta virtapiikeiltä ja/tai häiriötilanteilta ja järjestelmä saadaan
         sammutettua hallitusti myös ulkoisen virransyötön katketessa. 
