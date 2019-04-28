@@ -14,6 +14,13 @@
 \include{styles}
 \graphicspath{ {./images/} }
 
+% Keywords command
+\providecommand{\keywords}[1]
+{
+  \small	
+  \textbf{\textit{Avainsanat ---}} #1
+}
+
 %%% The "real" document content comes below...
 
 \title{TIE-02301 Johdatus ohjelmointiin: Harjoitustyö 1}
@@ -88,7 +95,7 @@
     \begin{abstract}
         Tämä dokumentti on tarkoitettu havainnollistamaan Megantti-konsernille tuotettavan asiakastietojärjestelmän suunnittelua, kehitystä ja toteutusta. Dokumentissa pyritään olemaan mahdollisimman kattavia, jotta valmiin asiakastietojärjestelmän
         rakentaminen olisi mahdollismman vaivatonta suoraan tämän dokumentin pohjalta.
-        
+
         Dokumentin eri luvuissa analysoimme muun muassa taustatilannetta, sidosryhmiä ja järjestelmän vaatimuksia.
         Luvussa \ref{keruu} analysoidaan syvemmin järjestelmän vaatimuksien keruuta. Luku \ref{kuvaus} puolestaan keskittyy enemmän järjestelmän vaatimuksiin, lopulliseen ulkoasuun ja toimintaperiaatteisiin.
 
@@ -102,7 +109,13 @@
             \caption{Megantti-konsernin logo} % Raportissa tulee olla selite jokaisen kuvan/kuvion/taulukon alla
             \label{img:megantti} % vaihda vastaamaan kuvaa, jolloin voit tekstissä viitata \ref{img:myimg}
         \end{figure}
+        \mbox{}
+        \vfill            
+        \begin{center}      
+                \keywords{asiakastietojärjestelmä, CRM, Megantti, ohjelmistotuotanto}
+        \end{center}
     \end{abstract}
+
     
     % Älä lisää sisältöä tähän tiedostoon vaan niille varattuihin tiedostoihin
     
