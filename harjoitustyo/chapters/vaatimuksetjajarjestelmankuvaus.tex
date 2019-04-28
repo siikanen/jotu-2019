@@ -108,24 +108,27 @@
         Järjestelmässä tulee olla selkeä \textit{Access policy} käyttäjille. Tämä tullaan käytännössä toteuttamaan
         minumum access policy -periaatetta, eli jokaisella käyttäjällä on minimioikeudet järjestelmään.
         Tämä käytäntö suojaa sekä yksittäistä laitetta, että koko verkkoa, jossa järjestelmä on käytössä. 
+        \cite{kurssi, sommerville}
 
 \section{Ympäristö}     % 3.4
 
     Seuraavissa kappaleissa käsitellään järjestelmän ympäristöä. Ympäristöllä takoitettaan muita järjestelmiä tai toimintoja, joiden kanssa uusi \gls{crm} tulee olemaan tekemisissä joko suoraan tai epäsuorasti.
     
     Ympäristöön luetaan myös ohjelmistoon epäsuorasti vaikuttavat tekijät mm. virransyöttö ja laitearkkitehtuuri.
+    \cite{sommerville}
 
     \subsection{Liittyvät järjestelmät}     % 3.4.1
         % Mitä liittyviä järjestelmiä on (esim vanha järjestelmä, viranomaisjärjestelmät, muut yrityksen järjestelmät)? Mitä vaatimuksia ne asettavat määrittelydokumentin järjestelmälle?
         Uusi \gls{crm} tulee käytännössä integroitumaan jo olemassa olevan \gls{erp} järjestelmän alijärjestelmäksi. Näinollen sen tulee pystyä kommunikoimaan
          muunmuassa olemassaolevan tietokannan kanssa. Kommunikointiin kuuluu muunmuassa tilausten, asiakastietojen, tuotteiden ja myyntihistorian hakeminen, 
          luominen, ja muuttaminen järjestelmässä. Uudella \gls{crm}:llä ei tule olemaan omaa tietokantaa, vaan se hyödyntää jo olemassaolevaa tietokantaa suoraan. 
+         \cite{erp, crm2}
 
     \subsection{Tarvittavat yhteydet ja muut ympäristön vaatimukset}  % 3.4.2
         % Ympäristön (toiminta-tai käyttöympäristö) asettamia vaatimuksia? Mitä vaaditaan järjestelmältä, mitä järjestelmä vaatii ympäristöltä.
         Koska \gls{crm} tulee käyttämään jo olemassaolevan \gls{erp}:n tietokantaa, tulee se sijoittaa fyysisesti mahdollisimman lähelle tietokantapalvelun
         tarjoavaa järjestelmää. Näin saadaan minimoitua mahdollinen latenssi järjestelmien välillä ja nopeutettua operaatioiden suoritusta. Suositusnopeus 
-        \gls{crm}:n ja \gls{erp}:n välillä käytettävälle linkille on 40Gbit/s ja sen tulisi olla kahdennettu (\gls{redundantg}). 
+        \gls{crm}:n ja \gls{erp}:n välillä käytettävälle linkille on 40Gbit/s ja sen tulisi olla kahdennettu (\gls{redundantg}). \cite{crm}
 
         Järjestelmän saatavuus tulisi myös taata replikoimalla palvelimia vähintään kolmeen instanssiin. Tämä voidaan käytännössä toteuttaa esimerkiksi virtualisoinnin 
         (\gls{virtualg}) avulla. Näin saatavuus säilyy vaikka yhdessä instanssissa ilmenisikin ongelma. 
